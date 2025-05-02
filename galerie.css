@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #152238;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+  
+  .grille-galerie {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* responsive */
+    gap: 20px;
+    padding: 0 40px;
+  }
+  
+  .grille-galerie img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .grille-galerie img:hover {
+    transform: scale(1.05);
+  }
+  .logo-real {
+    width: 150px;
+    height: auto;
+}
