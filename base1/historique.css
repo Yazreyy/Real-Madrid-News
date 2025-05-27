@@ -2,3 +2,13 @@
     width: 150px;
     height: auto;
 }
+
+p {
+    font-family: 'Lora', serif; /* Nouvelle police */
+    line-height: 1.8; /* Espacement vertical entre les lignes */
+    letter-spacing: 0.5px; /* Espacement horizontal entre les lettres (optionnel) */
+    margin: 20px auto; /* Marge autour du paragraphe */
+    max-width: 800px; /* Largeur du texte pour éviter qu’il soit trop étalé */
+    text-align: justify; /* Justifie le texte pour un rendu plus propre */
+    padding: 10px;
+}
