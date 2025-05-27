@@ -1,0 +1,16 @@
+body {
+    background-color: #ffffff;
+  }
+  
+  .fiche-joueur {
+    color: #1a1a1a;
+  }
+  
+  .fiche-joueur img {
+    border: 3px solid #ffcc00; /* Exemple : bordure dorée pour Arda */
+    width: 200px;
+    height: auto;
+    display: block;
+    margin : 0 auto;
+  }
+  
