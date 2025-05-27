@@ -1,8 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #152238;
+    background-color: #f8fafc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
     margin: 0;
-    padding: 20px;
+    padding: 0 20px 40px;
   }
   
   p {
@@ -13,9 +14,11 @@ body {
   
   .grille-galerie {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* responsive */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* responsive */
     gap: 20px;
-    padding: 0 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 ;
   }
   
   .grille-galerie img {
@@ -35,13 +38,19 @@ body {
     height: auto;
 }
   .joueur{
-   text-align:center;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
   .joueur p{
-    margin-top:10px;
-    font-weight:bold;
-    color:white;
-    font-size:1em;
+    margin:12px 0 16px;
+    font-weight:600;
+    color:#1a73e8;
+    font-size:1.1rem;
 
   }
   .joueur a {
@@ -51,6 +60,42 @@ body {
   }
   
   .joueur a:hover {
-    color: #007bff; /* ou toute autre couleur pour l'effet de survol */
+    color: #007bff;
+    
   }
+
+  .joueur:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  }
+
+  .joueur img {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #eee;
+    border-radius: 16px 16px 0 0;
+    transition: transform 0.3s ease;
+  }
+
+  .joueur:hover img {
+    transform: scale(1.05);
+  }
+
+  .joueur p a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+  .joueur p a:hover {
+    color: #0c47b7;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 480px) {
+    .grille-galerie {
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 16px;
+    } }
+
+
   
