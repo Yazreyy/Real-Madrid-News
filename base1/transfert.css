@@ -2,3 +2,71 @@
     width: 150px;
     height: auto;
 }
+
+.transfert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.transfert img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.joueur p {
+    margin-top: 10px;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.fleche-rouge-complete {
+    display: inline-block;
+    width: 60px;      /* longueur totale */
+    height: 12px;     /* épaisseur de la ligne */
+    background-color: green; /* ligne rouge */
+    position: relative;
+    margin: 0 20px;
+  }
+  
+  .fleche-rouge-complete::after {
+    content: "";
+    position: absolute;
+    top: -6px;              /* centre vertical */
+    right: -12px;           /* pointe à droite */
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid green; /* pointe rouge */
+  }
+
+  .fleche-rouge-gauche {
+    display: inline-block;
+    width: 60px;      /* longueur totale */
+    height: 12px;     /* épaisseur de la ligne */
+    background-color: red; /* ligne rouge */
+    position: relative;
+    margin: 0 20px;
+  }
+  
+  .fleche-rouge-gauche::after {
+    content: "";
+    position: absolute;
+    top: -6px;              /* centre vertical */
+    left: -12px;            /* pointe à gauche */
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 12px solid red; /* pointe rouge à gauche */
+  }
+  
+  
+  
