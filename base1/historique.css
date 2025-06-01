@@ -3,12 +3,116 @@
     height: auto;
 }
 
-p {
-    font-family: 'Lora', serif; /* Nouvelle police */
-    line-height: 1.8; /* Espacement vertical entre les lignes */
-    letter-spacing: 0.5px; /* Espacement horizontal entre les lettres (optionnel) */
-    margin: 20px auto; /* Marge autour du paragraphe */
-    max-width: 800px; /* Largeur du texte pour éviter qu’il soit trop étalé */
-    text-align: justify; /* Justifie le texte pour un rendu plus propre */
-    padding: 10px;
-}
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    background-color: #fdfdfd;
+    line-height: 1.8;
+    padding: 40px 80px;
+    color: #222;
+  }
+  
+  header {
+    color: white;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ff6600;
+  }
+  
+  .logo-real {
+    width: 120px;
+  }
+  
+  
+  .hero-historique {
+    background: linear-gradient(to right, #0a0a0a, #1a1a1a);
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .hero-historique h1 {
+    color: #ff6600;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .content-section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
+  }
+  .texte-historique h2 {
+    color: #ff6600;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .texte-historique p {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+    
+  
+  .hero p {
+    font-style: italic;
+    color: #ccc;
+  }
+  
+  .contenu-historique {
+    padding: 3rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+  
+  footer {
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  footer input,
+  footer textarea {
+    padding: 0.8rem;
+    width: 80%;
+    max-width: 400px;
+    margin: 0.5rem auto;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  footer button {
+    background-color: #ff6600;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer button:hover {
+    background-color: #cc5200;
+  }
+  

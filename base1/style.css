@@ -7,10 +7,13 @@ body {
     font-family: 'Libre Baskerville', serif;
     background-color: #f0f2f5;
     color: #222;
+    background-color: #fff;
     line-height: 1.5;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    margin : 0;
+
   }
 
   header {
@@ -22,20 +25,24 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
+    padding: 1rem 2rem;
     max-width: 1200px;
     margin: 0 auto 20px;
+    border-bottom: 1px solid #e0e0e0;
   }  
   .logo-real {
-    width: 150px;
+    width: 120px;
     height: auto;
-    cursor: pointer;
   }
   
 
   nav ul {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
   }
 
 nav ul li{
@@ -44,35 +51,37 @@ nav ul li{
 
 nav ul li a {
     text-decoration: none;
-    color: #0c47b7;
-    font-weight: 700;
+    color: #333;
+    font-weight: bold;
     font-size: 1rem;
     padding: 8px 12px;
     border-radius: 6px;
-    transition: background-color 0.3s ease;
+    transition:color 0.3s ease;
   }
   nav ul li a:hover {
     background-color: #ff6600;
-    color: white;
   }
 
   .hero {
     text-align: center;
     max-width: 900px;
     margin: 0 auto 40px;
+    padding: 3rem 1rem;
+    font-family: 'Libre Baskerville' , serif;
     border-bottom: 3px solid #ff6600;
     padding-bottom: 10px;
     margin-bottom: 20px;
+    background-color: #fff;
   }
   .hero h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    color: #0c47b7;
-    margin-bottom: 12px;
+    color: #111;
+    margin-bottom: 0.5rem;
   }
   .hero p {
     font-size: 1.25rem;
-    color: #555;
+    color: #666;
     font-style: italic;
   }
     
